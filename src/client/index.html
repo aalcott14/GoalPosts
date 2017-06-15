@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='GoalPosts'>
+  <head>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='/fullcalendar/dist/fullcalendar.css' />
+    <script src='/jquery/dist/jquery.min.js'></script>
+    <script src='/moment/min/moment.min.js'></script>
+    <script src='/fullcalendar/dist/fullcalendar.js'></script>
+    <title>GoalPosts</title>
+  </head>
+  <body>
+    <h1>GoalPosts</h1>
+
+    <div ng-view></div>
+
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+
+    <!-- TODO: ADD DEPENDENCY SCRIPT TAGS -->
+    <script src="/controllers/auth-controller.js"></script>
+    <script src="/controllers/detail-controller.js"></script>
+    <script src="/controllers/goal-form-controller.js"></script>
+    <script src="/controllers/goals-controller.js"></script>
+    <script src="/services/goals-service.js"></script>
+    <script src="/services/auth-service.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
