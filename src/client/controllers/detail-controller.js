@@ -1,6 +1,5 @@
 angular.module('GoalPosts.Detail.Controller', [])
 
-// TODO: Define a controller that will display a single Goal's detailed notes
 .controller('DetailController', function ($location, $scope, Goals) {
   $scope.detail = {};
 
