@@ -13,7 +13,7 @@ angular.module('GoalPosts.Auth.Controller', [])
         $scope.loginError = error.data;
       })
       .then(function() {
-        $scope.user = '';
+        $scope.user = null;
       });
   };
 
@@ -27,7 +27,7 @@ angular.module('GoalPosts.Auth.Controller', [])
         $scope.signupError = error.data;
       })
       .then(function() {
-        $scope.user = '';
+        $scope.user = null;
       });
   };
 });
