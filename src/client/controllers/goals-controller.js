@@ -16,7 +16,6 @@ angular.module('GoalPosts.Goals.Controller', [])
             return goalObj;
           }),
           eventClick: function(goal) {
-            console.log(goal.url);
             $location.url;
           },
           dayClick: function(date, jsEvent, view) {
