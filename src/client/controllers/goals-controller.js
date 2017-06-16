@@ -12,7 +12,7 @@ angular.module('GoalPosts.Goals.Controller', [])
             let goalObj = {};
             goalObj.title = goal.name;
             goalObj.start = goal.dueDate.split('T')[0];
-            goalObj.url = '/#/goals/:' + goal.id;
+            goalObj.url = '/#!/goals/:' + goal.id;
             return goalObj;
           }),
           eventClick: function(goal) {
