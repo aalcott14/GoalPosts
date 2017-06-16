@@ -1,2 +1,2 @@
 # Goal Posts
-This is a project I worked on as a student at HR.
+An application for documenting and tracking your long-term and short-term goals
