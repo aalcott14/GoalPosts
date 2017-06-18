@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+}
+
+#login {
+  text-align: center;
+}
+
+#signup {
+  text-align: center;
+}
+
+.login-error {
+  color: red;
+}
