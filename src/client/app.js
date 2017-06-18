@@ -34,6 +34,10 @@ angular.module('GoalPosts', [
       templateUrl: 'views/signup.html',
       controller: 'AuthController'
     })
+    .otherwise({
+      templateUrl: 'views/login.html',
+      controller: 'AuthController'
+    })
 
   $httpProvider.interceptors.push('AttachTokens');
 })
