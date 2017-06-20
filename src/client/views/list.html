@@ -1,0 +1,17 @@
+<div id="list">
+  <button id="newgoalbtn" class ="btn btn-primary" ng-click="goToAddGoal()">Add a new goal!</button>
+  <button id="signout" class ="btn btn-danger" ng-click="signOut()">Sign Out</button>
+  <br /><br />
+
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="#!/home">Home</a></li>
+    <li role="presentation" class="active"><a href="#!/list">All Goals</a></li>
+  </ul>
+
+  <h2 style="text-align: center">My Goal List</h2>
+  <ol>
+    <li ng-repeat="goal in goalList">
+      <a ng-click="goToDetail(goal.id)">{{goal.name}} - {{goal.complete}}</href>
+    </li>
+  </ol>
+</div>
