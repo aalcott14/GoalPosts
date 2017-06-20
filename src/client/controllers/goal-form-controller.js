@@ -4,7 +4,7 @@ angular.module('GoalPosts.GoalForm.Controller', [])
   $scope.goalForm = {};
 
   $scope.returnHome = function() {
-    $location.url('/goals');
+    $location.url('/home');
   }
 
   $scope.addGoal = function() {
