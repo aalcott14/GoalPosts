@@ -23,6 +23,6 @@ angular.module('GoalPosts.Detail.Controller', [])
     }
 
     $scope.returnHome = function () {
-      $location.url('/goals');
+      $location.url('/home');
     }
 });
