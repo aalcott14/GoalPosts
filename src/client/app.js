@@ -11,8 +11,13 @@ angular.module('GoalPosts', [
 
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
-    .when('/goals', {
-      templateUrl: 'views/goals.html',
+    .when('/home', {
+      templateUrl: 'views/home.html',
+      controller: 'GoalsController',
+      authenticate: true
+    })
+    .when('/list', {
+      templateUrl: 'views/list.html',
       controller: 'GoalsController',
       authenticate: true
     })
