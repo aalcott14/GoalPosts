@@ -7,7 +7,7 @@ angular.module('GoalPosts.Auth.Controller', [])
     Auth.login($scope.user)
       .then(function (token) {
         $window.localStorage.setItem('com.gp', token);
-        $location.path('/goals');
+        $location.path('/home');
       })
       .catch(function (error) {
         $scope.loginError = error.data;
@@ -21,7 +21,7 @@ angular.module('GoalPosts.Auth.Controller', [])
     Auth.signup($scope.user)
       .then(function (token) {
         $window.localStorage.setItem('com.gp', token);
-        $location.path('/goals');
+        $location.path('/home');
       })
       .catch(function (error) {
         $scope.signupError = error.data;
