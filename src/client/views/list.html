@@ -9,8 +9,8 @@
   </ul>
 
   <h2 style="text-align: center">My Goal List</h2>
-  <ol>
-    <li ng-repeat="goal in goalList">
+  <ol class="list-group">
+    <li class="list-group-item" ng-repeat="goal in goalList">
       <a ng-click="goToDetail(goal.id)">{{goal.name}} - {{goal.complete}}</href>
     </li>
   </ol>
