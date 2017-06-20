@@ -1,7 +1,7 @@
 <div id="goals">
-  <button class ="btn btn-primary" ng-click="goToAddGoal()">Add a new goal!</button>
-  <button id="signout" class ="btn btn-primary" ng-click="signOut()">Sign Out</button>
-  <h2>My Goals (click to view details)</h2>
+  <button id="newgoalbtn" class ="btn btn-primary" ng-click="goToAddGoal()">Add a new goal!</button>
+  <button id="signout" class ="btn btn-danger" ng-click="signOut()">Sign Out</button>
+  <h2>My Goal Calendar</h2>
   <div id='calendar'></div>
   <ol>
     <li ng-repeat="goal in goalList">
