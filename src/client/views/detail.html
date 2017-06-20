@@ -1,8 +1,13 @@
 <button class ="btn btn-primary" ng-click="returnHome()">Go back to yours goals</button>
+<br /><br />
+
 <div class="goal-detail">
   <h2> Goal Details </h2>
+
   <p>{{goal.name}}</p>
   <p>Description: {{goal.description}}</p>
   <p>Due: {{dueDate}}</p>
+  <br />
+
   <button class ="btn btn-primary" ng-click="completeGoal()">{{completeMessage}}</button>
 </div>
