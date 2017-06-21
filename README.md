@@ -27,4 +27,4 @@ Inside of src/ directory, start your Node.js server:
 nodemon server.js
 ```
 
-Finally, navigate to `http://localhost:8080` to begin documenting and tracking all your goals in life!
+Finally, navigate to `http://localhost:8080`, sign up for an account, and begin documenting and tracking all your goals in life!
