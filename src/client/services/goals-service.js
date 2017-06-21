@@ -42,7 +42,7 @@ angular.module('GoalPosts.Goals.Service', [])
   var deleteGoal = function(id) {
     return $http({
       method: 'POST',
-      url: '/api/goals/delete' + id
+      url: '/api/goals/delete/' + id
     })
     .then(function (res) {
       return res;
@@ -53,7 +53,8 @@ angular.module('GoalPosts.Goals.Service', [])
     addGoal: addGoal,
     getAllGoals: getAllGoals,
     getGoalById: getGoalById,
-    markAsComplete: markAsComplete
+    markAsComplete: markAsComplete,
+    deleteGoal: deleteGoal
   };
 
 });

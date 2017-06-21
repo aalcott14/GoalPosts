@@ -37,4 +37,11 @@ Goal.findAllGoalsForUser = function(id_users) {
     })
 };
 
+Goal.delete = function(id) {
+  return db('goals').where({ id: id }).del()
+  .then(function(res) {
+    return res;
+  })
+}
+
 module.exports = Goal;
