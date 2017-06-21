@@ -39,6 +39,16 @@ angular.module('GoalPosts.Goals.Service', [])
     })
   }
 
+  var deleteGoal = function(id) {
+    return $http({
+      method: 'POST',
+      url: '/api/goals/delete' + id
+    })
+    .then(function (res) {
+      return res;
+    });
+  }
+
   return {
     addGoal: addGoal,
     getAllGoals: getAllGoals,
