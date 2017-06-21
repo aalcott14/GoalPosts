@@ -44,6 +44,9 @@ router.get('/goals/:id', function(req,res) {
   })
 });
 
+router.post('/goals/delete', function(req, res) {
+  
+})
 
 router.post('/signup', function(req, res) {
   var username = req.body.username;

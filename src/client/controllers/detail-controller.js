@@ -25,4 +25,9 @@ angular.module('GoalPosts.Detail.Controller', [])
     $scope.returnHome = function () {
       $location.url('/home');
     }
+
+    $scope.deleteGoal = function() {
+      Goals.deleteGoal($location.$$url.split('/')[2].split(':')[1]);
+      $location.url('/home');
+    }
 });
