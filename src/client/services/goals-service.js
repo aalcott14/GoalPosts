@@ -19,8 +19,7 @@ angular.module('GoalPosts.Goals.Service', [])
     })
     .then(function (res) {
       let sortedGoals = res.data.sort((a, b) => a.dueDate.split('T')[0].replace(/-/g, "") - b.dueDate.split('T')[0].replace(/-/g, ""));
-      console.log('Sorted Goals:', sortedGoals);
-      return sortedGoals;
+      return res;
     });
   };
 
