@@ -1,8 +1,12 @@
 # Goal Posts
 An application for documenting and tracking your long-term and short-term goals
 
+
+
 ## Tech Stack
 AngularJS, Node/Express, SQLite3/Knex, Bootstrap
+
+
 
 ## Setup
 Navigate to the src/ directory and install all packages:
