@@ -1,9 +1,12 @@
 body {
   padding: 10px;
+  background-color: #EDFFFC;
 }
 
-.title {
+#header {
+  background-color: #838786;
   text-align: center;
+  color: white;
 }
 
 #login {
@@ -20,4 +23,10 @@ body {
 
 .login-error {
   color: red;
+}
+
+#calendar {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
 }
