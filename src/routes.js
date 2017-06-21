@@ -45,7 +45,6 @@ router.get('/goals/:id', function(req,res) {
 });
 
 router.post('/goals/delete/:id', function(req, res) {
-  console.log('IN DELETE ROUTE', req.params.id);
   Goal.delete(req.params.id)
   .then(() => {
     res.sendStatus(200);

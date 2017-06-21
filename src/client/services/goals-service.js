@@ -18,7 +18,9 @@ angular.module('GoalPosts.Goals.Service', [])
       url: '/api/goals',
     })
     .then(function (res) {
-      return res;
+      let sortedGoals = res.data.sort((a, b) => a.dueDate.split('T')[0].replace(/-/g, "") - b.dueDate.split('T')[0].replace(/-/g, ""));
+      console.log('Sorted Goals:', sortedGoals);
+      return sortedGoals;
     });
   };
 
