@@ -4,7 +4,7 @@ body {
 }
 
 #header {
-  background-color: #0389CB;
+  background-color: #0174AE;
   color: white;
   padding-left: 10px;
 }
@@ -32,7 +32,8 @@ body {
 }
 
 .title {
-  vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #btn-group {
