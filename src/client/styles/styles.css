@@ -31,6 +31,11 @@ body {
   border-radius: 5px;
 }
 
-#new-goal-btn {
+.title {
+  vertical-align: middle;
+}
+
+#btn-group {
   float: right;
+  padding-top: 10px;
 }
