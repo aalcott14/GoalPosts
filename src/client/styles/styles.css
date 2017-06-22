@@ -4,9 +4,9 @@ body {
 }
 
 #header {
-  background-color: #838786;
-  text-align: center;
+  background-color: #0389CB;
   color: white;
+  padding-left: 10px;
 }
 
 #login {
@@ -29,4 +29,8 @@ body {
   background-color: white;
   padding: 15px;
   border-radius: 5px;
+}
+
+#new-goal-btn {
+  float: right;
 }
