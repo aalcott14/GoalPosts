@@ -1,6 +1,6 @@
 body {
   padding: 10px;
-  background-color: #EDFFFC;
+  /*background-color: #EDFFFC;*/
 }
 
 #header {
@@ -10,10 +10,12 @@ body {
 }
 
 #login {
+  margin-top: 50px;
   text-align: center;
 }
 
 #signup {
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -38,5 +40,5 @@ body {
 
 #btn-group {
   float: right;
-  padding-top: 10px;
+  padding-top: 15px;
 }
