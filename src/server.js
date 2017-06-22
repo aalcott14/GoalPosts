@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true,
 }));
-app.use(express.static(path.join(__dirname, '../node_modules')));
+app.use(express.static(path.join(__dirname, './node_modules')));
 app.use(express.static(path.join(__dirname, '/client')));
 app.use('/api', router);
 
