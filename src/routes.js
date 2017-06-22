@@ -18,6 +18,7 @@ router.get('/goals', function(req, res) {
 });
 
 router.post('/goals', function(req, res) {
+  console.log('REQUEST BODY:', req.body);
   var decoded = jwtDecode(req.headers['x-access-token']);
   Goal.addNewGoal(decoded[0].id, req.body.name, req.body.description, req.body.complete, req.body.dueDate)
   .then(() => {

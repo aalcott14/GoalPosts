@@ -1,32 +1,12 @@
-<script>
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-</script>
-
 <nav id="header" class="navbar navbar-default">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
         <h1 class="title">GoalPosts</h1>
       </div>
-
       <div class="col-sm-8">
         <div id="btn-group" class="btn-group" role="group" aria-label="...">
-          <button type="button" class="btn btn-default btn-lg" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content=
-          '<form name="goal-form">
-            Goal title: <br />
-              <input type="text" ng-model="name"><br /><br />
-            Description: <br />
-              <input type="text" ng-model="description"><br /><br />
-            Due date: <br />
-              <input type="date" ng-model="dueDate"><br /><br />
-
-            <button type="submit" class="btn btn-primary" ng-click="addGoal()">SUBMIT</button>
-
-          </form>
-          <p style="color:green;">{{successMessage}}</p>'
-          >
+          <button type="button" class="btn btn-default btn-lg" ng-click="goToAddGoal()">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Goal
           </button>
           <button type="button" class="btn btn-default btn-lg" ng-click="signOut()">
@@ -42,6 +22,7 @@
   <ul class="nav nav-tabs">
     <li role="presentation" class="active"><a href="#!/home">Home</a></li>
     <li role="presentation"><a href="#!/list">All Goals</a></li>
+    <li role="presentation"><a href="#!/goal-form">Add Goal</a></li>
   </ul>
 
   <h2 style="text-align: center">Calendar</h2>

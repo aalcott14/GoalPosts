@@ -4,12 +4,28 @@
       <div class="col-sm-4">
         <h1 class="title">GoalPosts</h1>
       </div>
+
+      <div class="col-sm-8">
+        <div id="btn-group" class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default btn-lg" ng-click="goToAddGoal()">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Goal
+          </button>
+          <button type="button" class="btn btn-default btn-lg" ng-click="signOut()">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Logout
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
 
-<button class="btn btn-primary" ng-click="returnHome()">Return to your goals</button>
-<h2>Add Goal</h2>
+<ul class="nav nav-tabs">
+  <li role="presentation"><a href="#!/home">Home</a></li>
+  <li role="presentation"><a href="#!/list">All Goals</a></li>
+  <li role="presentation" class="active"><a href="#!/goal-form">Add Goal</a></li>
+</ul>
+
+<h2 style="text-align: center">My Goal List</h2>
 
 <form name="goal-form">
   Goal title: <br />
