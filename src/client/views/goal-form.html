@@ -27,12 +27,12 @@
 
 <h2 style="text-align: center">New Goal</h2>
 
-<form name="goal-form">
-  Goal title: <br />
+<form name="goal-form" id="goal-form">
+  <h4>Goal title:</h4>
     <input type="text" ng-model="name"><br /><br />
-  Description: <br />
+  <h4>Description:</h4>
     <input type="text" ng-model="description"><br /><br />
-  Due date: <br />
+  <h4>Due date:</h4>
     <input type="date" ng-model="dueDate"><br /><br />
 
   <button type="submit" class="btn btn-primary" ng-click="addGoal()">SUBMIT</button>
