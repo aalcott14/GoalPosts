@@ -1,6 +1,6 @@
 angular.module('GoalPosts.GoalForm.Controller', [])
 
-.controller('GoalFormController', function ($location, $scope, Goals) {
+.controller('GoalFormController', function ($location, $scope, Goals, Auth) {
   $scope.goalForm = {};
 
   $scope.returnHome = function() {
@@ -22,5 +22,9 @@ angular.module('GoalPosts.GoalForm.Controller', [])
       $scope.description = '';
       $scope.dueDate = '';
     });
+  }
+
+  $scope.signOut = function() {
+    Auth.signout();
   }
 })
