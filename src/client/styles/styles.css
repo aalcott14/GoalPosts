@@ -12,11 +12,14 @@ body {
 #login {
   margin-top: 50px;
   text-align: center;
+  width: 300px;
 }
 
 #signup {
   margin-top: 50px;
   text-align: center;
+  width: 300px;
+
 }
 
 #signout {

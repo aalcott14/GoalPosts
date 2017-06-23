@@ -11,11 +11,22 @@
 <div id='login'>
   <h1>Login</h1>
   <form name="loginForm" ng-submit='login()'>
-    <input type='text' ng-model='user.username' placeholder="Username">
-    <input type="password" ng-model='user.password' placeholder="Password">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      </span>
+      <input type="text" ng-model='user.username' class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">
+        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+      </span>
+      <input type="password" ng-model='user.password' class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+    </div>
+    <br />
     <button type="submit" class ="btn btn-primary">Login</button>
-    <p>
   </form>
-  <p class="login-error"}>{{loginError}}</p>
+  <br />
+  <p class="login-error">{{loginError}}</p>
   <a href="#!/signup">Don't have an account? <strong>Sign Up</strong> ...</a>
 </div>

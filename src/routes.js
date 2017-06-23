@@ -76,6 +76,7 @@ router.post('/signup', function(req, res) {
 });
 
 router.post('/login', function(req, res) {
+  console.log(req.body);
   var username = req.body.username;
   var password = req.body.password;
 
