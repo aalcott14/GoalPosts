@@ -10,15 +10,17 @@ body {
 }
 
 #login {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
   width: 300px;
+  margin: auto;
 }
 
 #signup {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
   width: 300px;
+  margin: auto;
 
 }
 
