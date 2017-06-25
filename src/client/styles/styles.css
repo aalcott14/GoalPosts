@@ -32,6 +32,10 @@ body {
   color: red;
 }
 
+#goal-form {
+  padding-left: 15px;
+}
+
 #calendar {
   background-color: white;
   padding: 15px;

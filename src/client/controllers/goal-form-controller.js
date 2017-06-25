@@ -1,6 +1,11 @@
-angular.module('GoalPosts.GoalForm.Controller', [])
+angular.module('GoalPosts.GoalForm.Controller', [
+  'ngMaterial'
+])
 
 .controller('GoalFormController', function ($location, $scope, Goals, Auth) {
+  this.myDate = new Date();
+  this.isOpen = false;
+
   $scope.goalForm = {};
 
   $scope.returnHome = function() {
