@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, './node_modules')));
 app.use(express.static(path.join(__dirname, '/client')));
 app.use('/api', router);
 
-app.listen(8080, function () {
-  console.log('GoalPosts App \nListening on port 8080...')
+app.listen(8000, function () {
+  console.log('GoalPosts App \nListening on port 8000...')
 })
 
 module.exports = app;
